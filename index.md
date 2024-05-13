@@ -37,6 +37,13 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
+### Header in Contents 
+
+#### Header not in Contents 
+
+
+
+
 #### Header 4
 
 *   This is an unordered list following a header.
