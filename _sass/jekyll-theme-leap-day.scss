@@ -175,23 +175,10 @@ header {
   z-index:99;
   -webkit-font-smoothing:antialiased;
   min-height: 76px;
-
-  // .profile-pic {
-  //   width: 100px; /* Adjust size as needed */
-  //   height: 100px; /* Adjust size as needed */
-  //   border-radius: 50%; /* Make the image circular */
-  //   margin-top: -50px; /* Half the height of the profile picture to center it */
-  //   border: 2px solid white; /* Optional: Add border to the profile picture */
-  //   background-size: cover;
-  //   background-position: center;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: -120px; /* Adjust the left position as needed */
-  //   transform: translateY(-50%);
-  // }
+  
   .profile-pic {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
     border-radius: 50%; /* Make the image circular */
     margin-top: -25px; /* Half the height of the profile picture to center it */
     border: 2px solid white; /* Optional: Add border to the profile picture */
@@ -200,7 +187,7 @@ header {
     background-position: center;
     position: absolute;
     top: 50%;
-    left: -120px; /* Adjust the left position as needed */
+    left: 20px; /* Adjust the left position as needed */
     transform: translateY(-50%);
   }
 
