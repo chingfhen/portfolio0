@@ -55,6 +55,12 @@ Example of the summary report can be found [here](/assets/pdfs/Data-Scientist-ap
 
 Stack: Azure Logic Apps, Azure Blob Storage, Azure Container Apps, Azure File Share, Wordpress, Power Virtual Agents, Power Automate, CustomGPT, Qdrant Vector Database and Search, Docker, OpenAI Chat API, FastAPI, Python
 
-## AI in After Sales Analytics 
-- e1  wqdADS
-- DWES**DFCSZ**
+## AI in Aftersales Fault Diagnosis
+In aftersales, customers may encounter issues with their electronic appliance, and they would contact the customer service team to resolve their issue. Diagnosing the problem correctly over the phone require extensive experience and customer service teams often encounter large volume of service requests. As a result, leveraging AI to predict the possible faults based on the customer description can be useful in improving aftersales processes. 
+
+I trained and deployed classification models to accurately predict fault codes based on customer description. 
+
+Full Solution Documentation can be found [here](/assets/images/powerbi_dashboard.png).
+
+Stack: LightGBM, Dask, Azure Container Apps, Azure File Share, Databricks, Docker, FastAPI, Python
+
