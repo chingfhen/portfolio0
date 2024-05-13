@@ -1,6 +1,6 @@
 title: Ching Fhen
 description: Leap Day is a theme for GitHub Pages.
-show_downloads: true
+
 google_analytics:
 theme: jekyll-theme-leap-day
 some_url: https://chingfhen.github.io/portfolio0/another-page.html
@@ -15,7 +15,7 @@ about_me:
   full_name: Tan Ching Fhen
   description: Experienced Data Scientist with half a decade of experience. Capable of delivering full stack AI Applications.
 
-
+show_downloads: true
 site:
   github:
     is_project_page: false
