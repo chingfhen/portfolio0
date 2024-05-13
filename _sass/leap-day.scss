@@ -2,3 +2,14 @@
 //     @import "{{ site.theme }}";
 // Then using this theme with jekyll-remote-theme will work fine.
 @import "jekyll-theme-leap-day";
+
+.profile-pic {
+    width: 100px; // Adjust the size as needed
+    height: 100px; // Adjust the size as needed
+    background-image: url(../images/octocat-logo.svg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; // Makes the image circular
+    margin: 0 auto; // Centers the image horizontally
+  }
+  
