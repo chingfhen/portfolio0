@@ -1,3 +1,7 @@
+---
+layout: notdefault
+---
+
 ## Project: AI in Financial Analytics 
 Analysing financial data with the goal of making informed business decisions can be challenging without the right domain knowledge, mathematical and statistical skillsets. By leveraging Generative AI, I was able to bridge this gap. 
 
