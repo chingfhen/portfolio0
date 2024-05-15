@@ -66,7 +66,7 @@ The raw financial data resides in MySQL Database. They are transformed into insi
 - databricks notebooks are scheduled with jobs to keep the views updated with the latest financial data
 
 2. Before inference, some views are retrieved based on relevance to the query. They are further transformed and filtered based on the query. Descriptive information about the table and columns are appended. 
-- these operations containerized with Docker and exposed as Rest API endpoints
+- these operations are containerized with Docker and exposed as Rest API endpoints
 - depending on the query, CustomGPT can call one or more endpoints to get the data it needs
 - for instance, if the user asks 'Plot the revenue over the past 5 months', then CustomGPT will call the /revenue_view endpoint and filter over the past 5 months 
 
