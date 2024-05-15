@@ -13,7 +13,7 @@ This blog documents how i leveraged Generative AI to analyze tabular financial d
 
 Watch the demo [here](https://drive.google.com/file/d/1GR2Zc3fGGLxfUhg9OH05LlVe1y6GP1Ys/view?usp=sharing)
 
-## 1 Problems and Considerations
+## 1. Problems and Considerations
 The problem of transforming numerical data into textual insights using LLMs may look trivial on the surface. However, as we get our hands dirty, we may start to hit roadblocks and issues that require us to be creative in our approach. Here are some problems and factors that i took into consideration:
 
 - Performance 
@@ -55,24 +55,11 @@ For that reason, I devised a different RAG approach which was more suitable for 
 
 > Depending on the nature of your data and requirements, the most suitable approach to data retrieval may vary
 
-## 2 Solution: User Interfaces
-The goal is to enable users to extract meaningful insights from financial tabular data so that they can make better strategic decisions for a company. My solution has two user interfaces:
-
-- CustomGPT - provides a real-time chat interface for users to generate insights and diagrams about the health of their company financials instantly
-
-![alt text](/assets/images/customgpt_snippet.png)
-
-- PowerBI - displays pre-generated AI financial insights along with financial charts created by PowerBI
-![alt text](/assets/images/powerbi_dashboard.png)
-
-
-## 3 Solution: Data Flow
+## 2. Solution: Data Flow
 
 ![alt text](/assets/images/data_flow.png)
 
 The raw financial data resides in MySQL Database. They are transformed into insights through the following steps:
-
-
 
 1. Raw data is aggregated and transformed raw data into views and stored in Azure Files
 - these views include revenue, cash flow, profit & loss, and accounts receivables which are more suitable for analysis
@@ -87,8 +74,22 @@ The raw financial data resides in MySQL Database. They are transformed into insi
 - for CustomGPT, the retrieval augmented generation is real-time 
 - for PowerBI, the retrieval augmented generation flows are programmed 
 
+## 3. Solution: User Interfaces
+My solution has two user interfaces:
 
-## 4 Key Component: Financial Views API
+- CustomGPT 
+  - provides a real-time chat interface for users to generate insights and diagrams about the health of their company financials instantly
+  - CustomGPT calls the Financial View API to retrieve data
+
+![alt text](/assets/images/customgpt_snippet.png)
+
+- PowerBI 
+  - displays pre-generated AI financial insights along with financial charts created by PowerBI
+  - AI financial insights are imported from databricks delta tables
+![alt text](/assets/images/powerbi_dashboard.png)
+
+
+## 4. Key Component: Financial Views API
 This is perhaps the most crucial component in the system
 ![alt text](/assets/images/financial_views_api.png)
 
@@ -103,137 +104,7 @@ This is perhaps the most crucial component in the system
 Stack: PowerBI, Databricks, Azure Container Apps, Azure File Share, MySQL, Docker, OpenAI Completions API, OpenAI Assistants API, CustomGPT, PySpark, Pandas, FastAPI, Python, SQL
 
 
-## 5 Conclusion
-In summary, I've demonstrated how to transform tabular data into meaningful insights using ChatGPT. The key takeaway is that we 
+## 5. Conclusion
+In summary, I've demonstrated how to transform tabular data into meaningful insights using ChatGPT and provide real-time inferences in a chat interface or in static dashboard. Key takeaway when dealing with similar usecases:
 
-
-
-
-Text can be **bold**, _italic_, or ~~strikethrough~~. Hello bro
-
-[Link to another page](./another-page.html).
-
-[Link to some other page](./some-other-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-### Header in Contents 
-
-#### Header not in Contents 
-
-
-
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+> Consider developing a data API that ensures that grounding data given to ChatGPT is of the highest quality - accurate, up-to-date, consistent, contextually clear
