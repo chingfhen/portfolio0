@@ -58,18 +58,22 @@ For that reason, I devised a different RAG approach which was more suitable for 
 ### Solution Devised
 The goal is to enable users to extract meaningful insights from financial tabular data so that they can make better strategic decisions for a company. My solution has two user interfaces:
 
-1. CustomGPT 
-- Purpose: Provides a real-time chat interface for users to generate insights and diagrams about the health of their company financials instantly
+- CustomGPT - provides a real-time chat interface for users to generate insights and diagrams about the health of their company financials instantly
 
 ![alt text](/assets/images/customgpt_snippet.png)
 
-2. PowerBI 
-- Purpose: Displays pre-generated AI financial insights along with financial charts created by PowerBI
+- PowerBI - displays pre-generated AI financial insights along with financial charts created by PowerBI
 ![alt text](/assets/images/powerbi_dashboard.png)
 
 
 ### Data Flow
+
+![alt text](/assets/images/data_flow.png)
+
 The raw financial data resides in MySQL Database. They are transformed into insights through the following steps:
+
+
+
 1. Raw data is aggregated and transformed raw data into views and stored in Azure Files
 - these views include revenue, cash flow, profit & loss, and accounts receivables which are more suitable for analysis
 - databricks notebooks are scheduled with jobs to keep the views updated with the latest financial data
@@ -82,7 +86,7 @@ The raw financial data resides in MySQL Database. They are transformed into insi
 3. During inference, Assistants API/CustomGPT may perform calculations using the code interpreter. Finally, the insights are displayed to the user in PowerBI/CustomGPT Interface
 - for CustomGPT, the retrieval augmented generation is real-time 
 - for PowerBI, the retrieval augmented generation flows are programmed 
-![alt text](/assets/images/data_flow.png)
+
 
 
 Design Choices
