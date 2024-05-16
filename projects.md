@@ -2,10 +2,10 @@
 layout: notdefault
 ---
 
-## Project: AI in Financial Analytics 
+## [Project: AI in Financial Analytics](https://chingfhen.github.io/portfolio0/ai_financials.html)
 Analysing financial data with the goal of making informed business decisions can be challenging without the right domain knowledge, mathematical and statistical skillsets. By leveraging Generative AI, I was able to bridge this gap. 
 
-I implemented AI Solutions that is able to analyse financial data, perform statistical techniques and generate insights that helped key decision makers to make strategic business decisions more rapidly. Full Solution Documentation can be found [here](/assets/images/powerbi_dashboard.png).
+I implemented AI Solutions that is able to analyse financial data, perform statistical techniques and generate insights that helped key decision makers to make strategic business decisions more rapidly. Full Solution Documentation can be found [here](https://chingfhen.github.io/portfolio0/ai_financials.html).
 
 #### 1. Financial Analytics PowerBI Dashboard with AI Insights
 Developed and integrated Generative AI Insights into Financial Analytics PowerBI Reports. Scheduled jobs to keep AI insights updated.

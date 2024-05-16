@@ -2,6 +2,13 @@
 layout: notdefault
 ---
 
+
+Watch the demo [here](https://drive.google.com/file/d/1fpG9mqigcH5hEfttQl2imVACnXsDB6ff/view?usp=drive_link)
+
+Example of the summary report can be found [here](/assets/pdfs/Data-Scientist-applicant-summary-report.pdf).
+![alt text](/assets/gifs/hiring_chatbot.gif)
+
+
 # AI in Financial Analytics 
 Financial analytics involves the use of data and statistical models to make informed business decisions, optimize financial performance, and manage risks. Generative AI enhances financial analytics by identifying patterns, and generating insights that might be missed by traditional methods. 
 
@@ -95,7 +102,7 @@ This is perhaps the most crucial component in the system
 
 - Up-to-date financial data 
   - ChatGPT has access to latest financial data about the company by calling various endpoints such as /cashflow_view, /accounts_receivable_view etc.
-  - the Azure Files containing the financial data are mounted as volumes on the Azure Container Apps
+  - the Azure Files containing up-to-date financial data are mounted as volumes on the Azure Container Apps
 - Data Transformation
   - the API handles the data transformation programmically, ensuring that final tabular views are consistent and accurate 
 - Contextual Clarity

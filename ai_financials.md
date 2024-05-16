@@ -95,7 +95,7 @@ This is perhaps the most crucial component in the system
 
 - Up-to-date financial data 
   - ChatGPT has access to latest financial data about the company by calling various endpoints such as /cashflow_view, /accounts_receivable_view etc.
-  - the Azure Files containing the financial data are mounted as volumes on the Azure Container Apps
+  - the Azure Files containing up-to-date financial data are mounted as volumes on the Azure Container Apps
 - Data Transformation
   - the API handles the data transformation programmically, ensuring that final tabular views are consistent and accurate 
 - Contextual Clarity
