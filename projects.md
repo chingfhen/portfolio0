@@ -38,7 +38,7 @@ Job Hiring is often a tedious task because the HR needs to filter and analyse hu
 
 I implemented AI Solutions that can filter, analyse and summarize job applications, which improved the efficiency of job hiring processes for HR. 
 
-Full Solution Documentation can be found [here](/assets/images/powerbi_dashboard.png). Demo can be found [here](https://drive.google.com/file/d/1fpG9mqigcH5hEfttQl2imVACnXsDB6ff/view?usp=sharing)
+Full Solution Documentation can be found [here](/ai_financials.html). Demo can be found [here](https://drive.google.com/file/d/1fpG9mqigcH5hEfttQl2imVACnXsDB6ff/view?usp=sharing)
 
 
 #### 1. Job Applicant Analytics Chatbot
