@@ -5,7 +5,9 @@ layout: notdefault
 ## [Project: AI in Financial Analytics](https://chingfhen.github.io/portfolio0/ai_financials.html)
 Analysing financial data with the goal of making informed business decisions can be challenging without the right domain knowledge, mathematical and statistical skillsets. By leveraging Generative AI, I was able to bridge this gap. 
 
-I implemented AI Solutions that is able to analyse financial data, perform statistical techniques and generate insights that helped key decision makers to make strategic business decisions more rapidly. Full Solution Documentation can be found [here](https://chingfhen.github.io/portfolio0/ai_financials.html).
+I implemented AI Solutions that is able to analyse financial data, perform statistical techniques and generate insights that helped key decision makers to make strategic business decisions more rapidly. 
+
+Watch the demo [here](https://drive.google.com/file/d/1GR2Zc3fGGLxfUhg9OH05LlVe1y6GP1Ys/view?usp=sharing). Full Solution Documentation can be found [here](https://chingfhen.github.io/portfolio0/ai_financials.html).
 
 #### 1. Financial Analytics PowerBI Dashboard with AI Insights
 Developed and integrated Generative AI Insights into Financial Analytics PowerBI Reports. Scheduled jobs to keep AI insights updated.
@@ -38,7 +40,7 @@ Job Hiring is often a tedious task because the HR needs to filter and analyse hu
 
 I implemented AI Solutions that can filter, analyse and summarize job applications, which improved the efficiency of job hiring processes for HR. 
 
-Full Solution Documentation can be found [here](/ai_financials.html). Demo can be found [here](https://drive.google.com/file/d/1fpG9mqigcH5hEfttQl2imVACnXsDB6ff/view?usp=sharing)
+Demo can be found [here](https://drive.google.com/file/d/1fpG9mqigcH5hEfttQl2imVACnXsDB6ff/view?usp=sharing)
 
 
 #### 1. Job Applicant Analytics Chatbot
@@ -59,8 +61,6 @@ Stack: Azure Logic Apps, Azure Blob Storage, Azure Container Apps, Azure File Sh
 In aftersales, customers may encounter issues with their electronic appliance, and they would contact the customer service team to resolve their issue. Diagnosing the problem correctly over the phone require extensive experience and customer service teams often encounter large volume of service requests. As a result, leveraging AI to predict the possible faults based on the customer description can be useful in improving aftersales processes. 
 
 I trained and deployed classification models to accurately predict fault codes based on customer description. 
-
-Full Solution Documentation can be found [here](/assets/images/powerbi_dashboard.png).
 
 Stack: LightGBM, Dask, Azure Container Apps, Azure File Share, Databricks, Docker, FastAPI, Python
 
